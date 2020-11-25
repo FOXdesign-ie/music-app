@@ -1,0 +1,43 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-top: 1rem;
+
+    .logo {
+        height: 9vh;
+        img {
+            height: 100%;
+        }
+    }
+  
+    button {
+        background: transparent;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        padding: 0.4rem;
+        text-align: center;
+        transition: all 1s ease;
+        &:hover {
+            box-shadow: 0px 0px 15px  rgb(200, 178, 54);
+        }
+        span {
+            display: flex;
+            padding-bottom: 0.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) { 
+    nav {
+        .logo {
+            height: 13vh;
+        }
+        button {
+            padding: 0.3rem;
+        }
+    }    
+}

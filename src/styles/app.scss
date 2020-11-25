@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    background-color: rgb(26, 21, 21);
+    color: #fff;
+}
+
+.App {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@import "./nav";
+@import "./player";
+@import "./song";
+@import "./musicLibrary";

@@ -1,0 +1,104 @@
+.music-library {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 65%;
+    max-height: 100%;
+    background-color: rgb(34, 31, 31);
+    box-shadow: 1px 1px 5px  rgb(200, 178, 54);
+    overflow: scroll;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    opacity: 0;
+    h2 {
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid rgb(200, 178, 54);
+    }
+}
+
+.music-library-song {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    img {
+        width: 25%;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    &:hover {
+        background-color: rgb(200, 178, 54);
+    }
+    p {
+        padding: 0 1rem;
+    }
+}
+
+.selected {
+    background-color: rgb(200, 178, 54);
+}
+
+.active-library {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(200, 178, 54) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(200, 178, 54, 0.5);
+    border-radius: 20px;
+    border: transparent;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .music-library {
+        width: 35%;
+    }
+    .music-library-song {
+        img {
+            width: 15%;
+        }
+     
+        p {
+            padding: 0 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) { 
+    .music-library {
+        width: 55%;
+    }
+    .music-library-song {
+        padding: 0.7rem;
+        img {
+            width: 15%;
+        }
+     
+        p {
+            padding: 0 1rem;
+            font-size: 0.8rem;
+        }
+    } 
+}
