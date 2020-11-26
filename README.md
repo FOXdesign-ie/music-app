@@ -5,5 +5,5 @@
 
 ### Used technologies: React.js, SASS, HTML
 
-music: https://chillhop.com/
-support in creating: DevEd <3
+#### music: https://chillhop.com/
+#### support in creating: DevEd <3
