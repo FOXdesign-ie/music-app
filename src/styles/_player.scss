@@ -69,6 +69,16 @@ input[type='range']::-moz-range-thumb {
     pointer-events: none;
 }
 
+@media screen and (max-width: 1200px) {
+    .player--controllers {
+        svg {
+            font-size: 1.5rem;
+         }
+    }
+    
+}
+
+
 @media screen and (max-width: 800px) and (orientation: landscape) { 
     .player--controllers {
         padding:  0 ;

@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 65%;
+    width: 66%;
     max-height: 100%;
     background-color: rgb(34, 31, 31);
     box-shadow: 1px 1px 5px  rgb(200, 178, 54);
@@ -14,13 +14,14 @@
         padding: 1rem;
         text-align: center;
         border-bottom: 1px solid rgb(200, 178, 54);
+        letter-spacing: 0.3rem;
     }
 }
 
 .music-library-song {
     display: flex;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 0 1.2rem 1rem;
     cursor: pointer;
     transition: background 0.5s ease;
     img {
@@ -35,7 +36,8 @@
         background-color: rgb(200, 178, 54);
     }
     p {
-        padding: 0 1rem;
+        padding-left: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -82,6 +84,7 @@
      
         p {
             padding: 0 2rem;
+            font-size: 1.3rem;
         }
     }
 }

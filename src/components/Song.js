@@ -5,7 +5,7 @@ const Song = ({ currentSong, isPlaying }) => {
     return (
         <div className="song">
             <div className="song__data">
-                <p>"{currentSong.name}"</p>
+                <p><i>"{currentSong.name}"</i></p>
                 <p>{currentSong.artist}</p>
             </div>
 

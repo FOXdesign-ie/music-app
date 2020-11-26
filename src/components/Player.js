@@ -97,9 +97,9 @@ const Player = ({ songs, setSongs, currentSong, setCurrentSong, isPlaying, setIs
             </div>
 
             <div className="player--controllers">
-                <FontAwesomeIcon onClick={() => skipTrackHandler('skip-back')} size="2x" icon={faBackward} />
-                <FontAwesomeIcon onClick={playHandler} size="2x" icon={isPlaying ? faPauseCircle : faPlayCircle} />
-                <FontAwesomeIcon onClick={() => skipTrackHandler('skip-forward')} size="2x" icon={faForward} />
+                <FontAwesomeIcon style={{ color: ` ${currentSong.color[0]}` }} onClick={() => skipTrackHandler('skip-back')} size="2x" icon={faBackward} />
+                <FontAwesomeIcon style={{ color: ` ${currentSong.color[1]}` }}  onClick={playHandler} size="2x" icon={isPlaying ? faPauseCircle : faPlayCircle} />
+                <FontAwesomeIcon style={{ color: ` ${currentSong.color[0]}` }}  onClick={() => skipTrackHandler('skip-forward')} size="2x" icon={faForward} />
             </div>
         </div>
     )

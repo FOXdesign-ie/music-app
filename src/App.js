@@ -53,6 +53,7 @@ function App() {
       <Nav 
         libraryStatus={libraryStatus}
         setLibraryStatus={setLibraryStatus}
+        currentSong={currentSong}
       />
       <Song 
         currentSong={currentSong}
